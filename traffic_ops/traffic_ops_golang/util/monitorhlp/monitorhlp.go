@@ -31,7 +31,7 @@ import (
 	"time"
 
 	"github.com/apache/trafficcontrol/lib/go-tc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
+	"github.com/apache/trafficcontrol/ops/dbhelpers"
 )
 
 const MonitorProxyParameter = "tm.traffic_mon_fwd_proxy"

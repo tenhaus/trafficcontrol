@@ -28,8 +28,8 @@ import "net/http"
 import "github.com/apache/trafficcontrol/lib/go-tc"
 import "github.com/apache/trafficcontrol/lib/go-util"
 
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
+import "github.com/apache/trafficcontrol/ops/api"
+import "github.com/apache/trafficcontrol/ops/dbhelpers"
 
 const readQuery = `
 SELECT description,

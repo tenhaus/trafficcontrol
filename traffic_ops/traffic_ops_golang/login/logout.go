@@ -25,8 +25,8 @@ import "net/http"
 
 import "github.com/apache/trafficcontrol/lib/go-tc"
 import "github.com/apache/trafficcontrol/lib/go-rfc"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/tocookie"
+import "github.com/apache/trafficcontrol/ops/api"
+import "github.com/apache/trafficcontrol/ops/tocookie"
 
 func LogoutHandler(secret string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {

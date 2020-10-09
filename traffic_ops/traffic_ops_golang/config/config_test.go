@@ -23,7 +23,7 @@ import (
 	"crypto/tls"
 	"flag"
 	"fmt"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 	"github.com/basho/riak-go-client"
 	"io/ioutil"
 	"os"
@@ -33,11 +33,11 @@ import (
 )
 
 const (
-	logError   = "/var/log/traffic_ops/error.log"
-	logWarning = "/var/log/traffic_ops/warning.log"
-	logInfo    = "/var/log/traffic_ops/info.log"
-	logDebug   = "/var/log/traffic_ops/debug.log"
-	logEvent   = "/var/log/traffic_ops/event.log"
+	logError   = "/var/log/error.log"
+	logWarning = "/var/log/warning.log"
+	logInfo    = "/var/log/info.log"
+	logDebug   = "/var/log/debug.log"
+	logEvent   = "/var/log/event.log"
 )
 
 var debugLogging = flag.Bool("debug", false, "enable debug logging in test")
@@ -101,7 +101,7 @@ const (
 		"pid_file" : "/var/run/traffic_ops.pid",
 		"workers" : 12
 	},
-	"traffic_ops_golang" : {
+	"ops" : {
 		"port" : "443",
 		"proxy_timeout" : 60,
 		"proxy_keep_alive" : 60,
@@ -140,7 +140,7 @@ const (
 		"mONKEYDOmONKEYSEE."
 	],
 	"geniso" : {
-		"iso_root_path" : "/opt/traffic_ops/app/public"
+		"iso_root_path" : "/opt/app/public"
 	},
 	"inactivity_timeout" : 60
 }

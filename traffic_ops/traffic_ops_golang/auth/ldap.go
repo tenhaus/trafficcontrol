@@ -27,7 +27,7 @@ import (
 	"time"
 
 	"github.com/apache/trafficcontrol/lib/go-log"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
+	"github.com/apache/trafficcontrol/ops/config"
 
 	"gopkg.in/ldap.v2"
 )

@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/routing/middleware"
+	"github.com/apache/trafficcontrol/ops/routing/middleware"
 )
 
 func init() {

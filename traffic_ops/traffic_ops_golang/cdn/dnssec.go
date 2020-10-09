@@ -30,11 +30,11 @@ import (
 	"github.com/apache/trafficcontrol/lib/go-log"
 	"github.com/apache/trafficcontrol/lib/go-tc"
 	"github.com/apache/trafficcontrol/lib/go-util"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/deliveryservice"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/config"
+	"github.com/apache/trafficcontrol/ops/dbhelpers"
+	"github.com/apache/trafficcontrol/ops/deliveryservice"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 )
 
 const CDNDNSSECKeyType = "dnssec"

@@ -23,8 +23,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 )
 
 func Vault(w http.ResponseWriter, r *http.Request) {

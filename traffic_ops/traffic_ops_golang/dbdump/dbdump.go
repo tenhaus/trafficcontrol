@@ -29,7 +29,7 @@ import "time"
 import "github.com/apache/trafficcontrol/lib/go-log"
 import "github.com/apache/trafficcontrol/lib/go-rfc"
 
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
+import "github.com/apache/trafficcontrol/ops/api"
 
 func filename() string {
 	host, err := os.Hostname()

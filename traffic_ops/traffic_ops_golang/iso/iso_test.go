@@ -35,7 +35,7 @@ import (
 
 	"github.com/apache/trafficcontrol/lib/go-rfc"
 	libtc "github.com/apache/trafficcontrol/lib/go-tc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
+	"github.com/apache/trafficcontrol/ops/auth"
 	"github.com/jmoiron/sqlx"
 	"gopkg.in/DATA-DOG/go-sqlmock.v1"
 )

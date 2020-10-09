@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/apache/trafficcontrol/lib/go-log"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
+	"github.com/apache/trafficcontrol/ops/api"
 )
 
 // The proxy plugin reverse-proxies to other HTTP services, as configured.

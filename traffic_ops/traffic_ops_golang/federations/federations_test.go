@@ -27,8 +27,8 @@ import "testing"
 
 import "github.com/apache/trafficcontrol/lib/go-tc"
 
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
+import "github.com/apache/trafficcontrol/ops/api"
+import "github.com/apache/trafficcontrol/ops/auth"
 
 import "gopkg.in/DATA-DOG/go-sqlmock.v1"
 

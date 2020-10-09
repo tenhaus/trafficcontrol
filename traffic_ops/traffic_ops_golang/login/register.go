@@ -30,9 +30,9 @@ import "github.com/apache/trafficcontrol/lib/go-log"
 import "github.com/apache/trafficcontrol/lib/go-rfc"
 import "github.com/apache/trafficcontrol/lib/go-tc"
 
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
+import "github.com/apache/trafficcontrol/ops/api"
+import "github.com/apache/trafficcontrol/ops/config"
+import "github.com/apache/trafficcontrol/ops/dbhelpers"
 
 type registrationEmailFormatter struct {
 	From         rfc.EmailAddress

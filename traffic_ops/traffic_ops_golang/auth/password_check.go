@@ -46,7 +46,7 @@ func LoadPasswordBlacklist(filePath string) error {
 		return err
 	}
 
-	filePath = fmt.Sprintf("%straffic_ops/%s", pwd[:strings.Index(pwd, "traffic_ops")], filePath)
+	filePath = fmt.Sprintf("%s%s", pwd[:strings.Index(pwd, "traffic_ops")], filePath)
 
 	log.Infof("full path to password blacklist: %s\n", filePath)
 	in, err := os.Open(filePath)

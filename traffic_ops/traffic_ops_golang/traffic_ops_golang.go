@@ -34,11 +34,11 @@ import (
 	"time"
 
 	"github.com/apache/trafficcontrol/lib/go-log"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/about"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/plugin"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/routing"
+	"github.com/apache/trafficcontrol/ops/about"
+	"github.com/apache/trafficcontrol/ops/auth"
+	"github.com/apache/trafficcontrol/ops/config"
+	"github.com/apache/trafficcontrol/ops/plugin"
+	"github.com/apache/trafficcontrol/ops/routing"
 
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"

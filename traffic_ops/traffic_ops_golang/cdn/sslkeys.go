@@ -25,8 +25,8 @@ import (
 	"net/http"
 
 	"github.com/apache/trafficcontrol/lib/go-tc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 
 	"github.com/basho/riak-go-client"
 )

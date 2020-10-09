@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/parameter"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/parameter"
 	"github.com/lib/pq"
 
 	"github.com/apache/trafficcontrol/lib/go-tc"

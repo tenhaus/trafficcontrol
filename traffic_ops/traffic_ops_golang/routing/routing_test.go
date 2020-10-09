@@ -20,7 +20,7 @@ package routing
  */
 
 import (
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
+	"github.com/apache/trafficcontrol/ops/api"
 	"net/http"
 	"net/url"
 	"reflect"
@@ -32,9 +32,9 @@ import (
 	"context"
 	"net/http/httptest"
 
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/routing/middleware"
+	"github.com/apache/trafficcontrol/ops/auth"
+	"github.com/apache/trafficcontrol/ops/config"
+	"github.com/apache/trafficcontrol/ops/routing/middleware"
 )
 
 type key int

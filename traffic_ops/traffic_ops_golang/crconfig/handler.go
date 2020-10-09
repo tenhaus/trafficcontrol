@@ -31,10 +31,10 @@ import (
 	"github.com/apache/trafficcontrol/lib/go-log"
 	"github.com/apache/trafficcontrol/lib/go-rfc"
 	"github.com/apache/trafficcontrol/lib/go-tc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/deliveryservice"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/monitoring"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/dbhelpers"
+	"github.com/apache/trafficcontrol/ops/deliveryservice"
+	"github.com/apache/trafficcontrol/ops/monitoring"
 )
 
 // Handler creates and serves the CRConfig from the raw SQL data.

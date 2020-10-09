@@ -27,7 +27,7 @@ import "net/mail"
 import "github.com/apache/trafficcontrol/lib/go-rfc"
 import "github.com/apache/trafficcontrol/lib/go-tc"
 
-import "github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
+import "github.com/apache/trafficcontrol/ops/api"
 
 const msg = "From: %s\r\nTo:%s\r\nContent-Type: text/html\r\nSubject: Delivery Service Request for %s\r\n\r\n%s"
 

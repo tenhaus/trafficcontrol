@@ -28,10 +28,10 @@ import (
 	"strconv"
 
 	"github.com/apache/trafficcontrol/lib/go-tc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/tenant"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/dbhelpers"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
+	"github.com/apache/trafficcontrol/ops/tenant"
 )
 
 func GetURLKeysByID(w http.ResponseWriter, r *http.Request) {

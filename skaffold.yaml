@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+build:
+
+  artifacts:
+  - image: traffic-control.dev/lib
+    custom:
+      buildCommand: ./hack/refresh-libs
+      dependencies:
+        paths:
+        - lib
+
+  - image: traffic-control.dev/traffic-ops
+    context: traffic_ops
+
+
+deploy:
+  kubectl:
+    manifests:
+      - infrastructure/kube/*

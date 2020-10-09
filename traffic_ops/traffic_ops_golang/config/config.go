@@ -33,7 +33,7 @@ import (
 	"github.com/apache/trafficcontrol/lib/go-log"
 	"github.com/apache/trafficcontrol/lib/go-rfc"
 	"github.com/apache/trafficcontrol/lib/go-util"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 	"github.com/basho/riak-go-client"
 )
 
@@ -43,7 +43,7 @@ type Config struct {
 	CertPath               string   `json:"-"`
 	KeyPath                string   `json:"-"`
 	ConfigHypnotoad        `json:"hypnotoad"`
-	ConfigTrafficOpsGolang `json:"traffic_ops_golang"`
+	ConfigTrafficOpsGolang `json:"ops"`
 	ConfigTO               *ConfigTO   `json:"to"`
 	SMTP                   *ConfigSMTP `json:"smtp"`
 	ConfigPortal           `json:"portal"`
@@ -69,7 +69,7 @@ type ConfigHypnotoad struct {
 	// NOTE: don't care about any other fields for now..
 }
 
-// ConfigTrafficOpsGolang carries settings specific to traffic_ops_golang server
+// ConfigTrafficOpsGolang carries settings specific to ops server
 type ConfigTrafficOpsGolang struct {
 	// Deprecated in 5.0
 	Insecure bool `json:"insecure"`

@@ -34,9 +34,9 @@ import (
 	"github.com/apache/trafficcontrol/lib/go-rfc"
 	"github.com/apache/trafficcontrol/lib/go-tc"
 	"github.com/apache/trafficcontrol/lib/go-util"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/about"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/tocookie"
+	"github.com/apache/trafficcontrol/ops/about"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/tocookie"
 )
 
 // DefaultRequestTimeout is the default request timeout, if no timeout is configured.
@@ -58,7 +58,7 @@ const RouteID = "RouteID"
 
 // ServerName is the name and version of Traffic Ops.
 // Things that print the server application name and version, for example in headers or logs, should use this.
-var ServerName = "traffic_ops_golang" + "/" + about.About.Version
+var ServerName = "ops" + "/" + about.About.Version
 
 // Middleware is an HTTP dispatch "middleware" function.
 // A Middleware is a function which takes an http.HandlerFunc and returns a new http.HandlerFunc, typically wrapping the execution of the given handlerFunc with some additional behavior. For example, adding headers or gzipping the body.

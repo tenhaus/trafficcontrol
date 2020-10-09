@@ -29,7 +29,7 @@ import (
 
 	"github.com/apache/trafficcontrol/lib/go-rfc"
 
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
+	"github.com/apache/trafficcontrol/ops/config"
 )
 
 func TestLoginWithEmptyCredentials(t *testing.T) {

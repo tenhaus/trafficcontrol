@@ -25,7 +25,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/apache/trafficcontrol/lib/go-log"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/util/ims"
+	"github.com/apache/trafficcontrol/ops/util/ims"
 	"io/ioutil"
 	"net/http"
 	"strconv"
@@ -36,10 +36,10 @@ import (
 
 	"github.com/apache/trafficcontrol/lib/go-tc"
 	"github.com/apache/trafficcontrol/lib/go-util"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/dbhelpers"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/parameter"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/auth"
+	"github.com/apache/trafficcontrol/ops/dbhelpers"
+	"github.com/apache/trafficcontrol/ops/parameter"
 )
 
 const (

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Rolling out changes to lib"
+for dir in lib/*; do (cd "$dir"; go test ./...); done
+docker tag alpine:latest $IMAGE

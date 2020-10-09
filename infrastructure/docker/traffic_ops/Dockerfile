@@ -58,8 +58,8 @@ RUN /opt/traffic_ops/install/bin/install_goose.sh
 # 	&& yes | /opt/traffic_ops/install/bin/build_trafficops_perl_library -i
 
 RUN export PERL5LIB=/opt/traffic_ops/app/local/lib/perl5/:/opt/traffic_ops/install/lib/ \
-	&& export TERM=xterm \
-	&& export USER=root 
+  && export TERM=xterm \
+  && export USER=root
 
 # \todo add Drive Letters to postinstall input
 # RUN sed -i -- 's/"value": "b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y"/"value": "0"/g' /opt/traffic_ops/install/data/profiles/profile.trafficserver_edge.traffic_ops

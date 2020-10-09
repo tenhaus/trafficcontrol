@@ -30,10 +30,10 @@ import (
 	"github.com/apache/trafficcontrol/lib/go-log"
 	"github.com/apache/trafficcontrol/lib/go-tc"
 	"github.com/apache/trafficcontrol/lib/go-util"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/api"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/auth"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/config"
-	"github.com/apache/trafficcontrol/traffic_ops/traffic_ops_golang/riaksvc"
+	"github.com/apache/trafficcontrol/ops/api"
+	"github.com/apache/trafficcontrol/ops/auth"
+	"github.com/apache/trafficcontrol/ops/config"
+	"github.com/apache/trafficcontrol/ops/riaksvc"
 )
 
 type DsKey struct {
@@ -55,7 +55,7 @@ type ExpirationSummary struct {
 	OtherExpirations       []DsExpirationInfo
 }
 
-const emailTemplateFile = "/opt/traffic_ops/app/templates/send_mail/autorenewcerts_mail.html"
+const emailTemplateFile = "/opt/app/templates/send_mail/autorenewcerts_mail.html"
 
 func RenewCertificates(w http.ResponseWriter, r *http.Request) {
 	inf, userErr, sysErr, errCode := api.NewInfo(r, nil, nil)
